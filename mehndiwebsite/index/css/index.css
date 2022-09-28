@@ -1,0 +1,133 @@
+.text {
+    color: black;
+}
+
+.text {
+    cursor: pointer;
+    
+}
+
+.our-team-main {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px #323233 solid;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: 28px;
+}
+
+
+.our-team-main img {
+    border-radius: 10%;
+    margin-bottom: 20px;
+    width: 50px;
+    padding: 5px;
+}
+
+.our-team-main h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.our-team-main p {
+    margin-bottom: 0;
+}
+
+.team-back {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 15px 0 15px;
+    text-align: left;
+    background: #fff;
+
+}
+
+.team-front {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    padding: 15px;
+    bottom: 0px;
+    transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front {
+    bottom: 280px;
+    transition: all 1s ease-in-out;
+}
+
+.our-team-main:hover {
+    border-color: #777;
+    transition: all 1s ease-in-out;
+}
+
+.p {
+    font-size: 25px;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 10px;
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+@media (min-width: 1281px) {
+    .mainsliders {
+        margin-top: 100px;
+    }
+
+    .our-team-main img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* code in this block will be applied only if device width>768 and <1024 */
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* code in this block will be applied only if device width>320 and <480 */
+    .text {
+        font-size: 17px;
+    }
+
+    .mainsliders {
+        height: 200px;
+    }
+
+    .p {
+        font-size: 15px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+
+
+
+}
