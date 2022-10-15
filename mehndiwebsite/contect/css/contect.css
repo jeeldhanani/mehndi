@@ -13,25 +13,56 @@
     margin-top: 100px;
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1300px) and (max-width: 1600px) {
     #map
     {
-      height: 400px;
-      width: 830px;
+    box-shadow: 5px 5px 10px gray;
+    height: 380px;
+    width: 720px;
     }
     .new
     {
         padding: 40px;
     }
   }
-
-@media(max-width: 990px) {
+@media (min-width: 1280px) and (max-width: 1300px)
+{
+    #map
+    {
+    margin-top: 10px;
+    height: 350px;
+    width: 640px;
+    }
+}
+  @media (min-width: 990px) and (max-width: 1281px) {
+    #map
+    {
+        margin-top: 10px;
+        height: 310px;
+        width: 550px;
+    }
+  }
+@media (min-width: 767px) and (max-width: 990px) {
     .card {
         margin: 20px;
+    }
+    #map
+    {
+    margin-top: 10px;
+    height: 380px;
+    width: 690px;
+    }
+    input,textarea,#send
+    {
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .new
+    {
+        padding: 0px;
+    }
     #header>img {
         height: 250px;
     }
@@ -52,9 +83,13 @@
     #map
     {
         margin-top: 25px;
-        height: 220px;
-        width: 330px;
+        height: 240px;
+        width: 340px;
 
+    }
+    .card
+    {
+        margin-bottom: 10px;
     }
 
 }
@@ -100,13 +135,5 @@
 }
 
 /* cards*/
-#map
-{
-    box-shadow: 5px 5px 10px gray;
-}
 
 
-
-
-
- 
