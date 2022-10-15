@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../navbarcss/navbar.css">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <link rel="stylesheet" href="../contect/css/contect.css">
-    
+   
 </head>
 <body style="background-color:#9aceaf ;">
   <nav class="navbar navbar-expand-lg mb-1 fixed-top" id="navBar">
@@ -82,10 +82,10 @@
       <div class="col-12 text-center  ">
         <h1>Make your special occasion a memorable one</h1>
         <p>
-          Please provide your Name, Email, Phone Number, and the best time to contact you. It will also be very helpful if you can provide information on the Date, Time, City and type of Event you are planning.
+          Please provide your Name, Email, Phone Number, and the best time to contact you. It will also be very helpful if you can provide information on the Date, Time, City and type of Event you are planning.,
 
-          Email: jeeldhanani502@gmail.com
-          Phone: (209) 251-9400
+          Email: jeeldhanani502@gmail.com,
+          Phone: + 1 469 937 2470
         </p>
         
       </div>
@@ -94,12 +94,10 @@
  
   <!-- main content -->
   <section class="text-center mt-4">
-    <div class="container-fluid border p-5 border-5">
+    <div class="container-fluid border  border-5 new">
       <div class="row">
-        <div class="col-lg-7 ">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl"
-            class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="col-lg-7 col-12">
+          <div id ="map"></div>
         </div>
     
         <div class="col-lg-5 crd" id="forms">
@@ -325,22 +323,22 @@
     
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script>
-        var mapOptions = {
-            center: [21.7540071, 72.1437112],
-            zoom: 18
-        }
-        let customIcon = {
-            iconUrl:"https://www.flaticon.com/free-icon/location_4781517" ,
-            iconSize:[40,40]
-        }
-        let myIcon = L.icon(customIcon);
-        var map = new L.map('map', mapOptions);
-        let marker = new L.Marker([21.7540071, 72.1437112]); marker.addTo(map);
-        
-        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-        
-        
-        map.addLayer(layer);
+      // Creating map options
+      var mapOptions = {
+         center: [33.0145765, -96.5396453],
+         zoom: 17
+      }
+      
+      // Creating a map object
+      
+      var map = new L.map('map', mapOptions);
+      let marker = new L.Marker([33.0145765, -96.5396453]);
+      marker.addTo(map);
+      // Creating a Layer object
+      var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+      
+      // Adding layer to the map
+      map.addLayer(layer);
     </script>
     <script
       src="https://kit.fontawesome.com/266b76cb57.js"
@@ -378,6 +376,8 @@ if (document.documentElement.scrollTop > 20) {
 }
 }
   </script>
+
   </body>
 </html>
+
 
