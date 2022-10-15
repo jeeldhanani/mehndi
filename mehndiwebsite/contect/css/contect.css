@@ -13,6 +13,18 @@
     margin-top: 100px;
 }
 
+@media (min-width: 1281px) {
+    #map
+    {
+      height: 400px;
+      width: 830px;
+    }
+    .new
+    {
+        padding: 40px;
+    }
+  }
+
 @media(max-width: 990px) {
     .card {
         margin: 20px;
@@ -36,6 +48,13 @@
     .topnav {
         height: 220px;
         width: 540px;
+    }
+    #map
+    {
+        margin-top: 25px;
+        height: 220px;
+        width: 330px;
+
     }
 
 }
@@ -80,6 +99,14 @@
     background-color: white;
 }
 
-
-
 /* cards*/
+#map
+{
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+
+
+
+ 
